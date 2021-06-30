@@ -1,4 +1,4 @@
-# linuxroot
+# An elementary Linux Rootkit
 
 Result for the excellent and highly recommended blog series by [Xcellerator](https://xcellerator.github.io/)
 
