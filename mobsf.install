@@ -1,0 +1,500 @@
+tjguitat2025@tjguitat2025-VirtualBox:~/Mobile-Security-Framework-MobSF$ ./setup.sh
+[INSTALL] Found Python 3.8.10
+pip 21.2.4 from /home/tjguitat2025/.local/lib/python3.8/site-packages/pip (python 3.8)
+[INSTALL] Found pip
+Requirement already satisfied: pip in /home/tjguitat2025/.local/lib/python3.8/site-packages (21.2.4)
+[INSTALL] Using python virtualenv
+[INSTALL] Activating virtualenv
+Collecting pip
+  Downloading pip-21.2.4-py3-none-any.whl (1.6 MB)
+     |████████████████████████████████| 1.6 MB 3.4 MB/s 
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 20.0.2
+    Uninstalling pip-20.0.2:
+      Successfully uninstalled pip-20.0.2
+Successfully installed pip-21.2.4
+[INSTALL] Installing Requirements
+Ignoring waitress: markers 'platform_system == "Windows"' don't match your environment
+Collecting Django>=3.1.5
+  Downloading Django-3.2.8-py3-none-any.whl (7.9 MB)
+     |████████████████████████████████| 7.9 MB 3.1 MB/s 
+Collecting lxml>=4.6.2
+  Downloading lxml-4.6.3-cp38-cp38-manylinux2014_x86_64.whl (6.8 MB)
+     |████████████████████████████████| 6.8 MB 5.2 MB/s 
+Collecting rsa>=4.7
+  Downloading rsa-4.7.2-py3-none-any.whl (34 kB)
+Collecting biplist>=1.0.3
+  Downloading biplist-1.0.3.tar.gz (21 kB)
+Collecting requests>=2.25.1
+  Downloading requests-2.26.0-py2.py3-none-any.whl (62 kB)
+     |████████████████████████████████| 62 kB 5.9 MB/s 
+Collecting bs4>=0.0.1
+  Downloading bs4-0.0.1.tar.gz (1.1 kB)
+Collecting colorlog>=4.7.2
+  Downloading colorlog-6.5.0-py2.py3-none-any.whl (11 kB)
+Collecting macholib>=1.14
+  Downloading macholib-1.15.2-py2.py3-none-any.whl (37 kB)
+Collecting whitenoise>=5.2.0
+  Downloading whitenoise-5.3.0-py2.py3-none-any.whl (19 kB)
+Collecting gunicorn>=20.0.4
+  Downloading gunicorn-20.1.0-py3-none-any.whl (79 kB)
+     |████████████████████████████████| 79 kB 8.9 MB/s 
+Collecting psutil>=5.8.0
+  Downloading psutil-5.8.0-cp38-cp38-manylinux2010_x86_64.whl (296 kB)
+     |████████████████████████████████| 296 kB 2.2 MB/s 
+Collecting shelljob>=0.6.2
+  Downloading shelljob-0.6.3-py3-none-any.whl (9.9 kB)
+Collecting asn1crypto>=1.4.0
+  Downloading asn1crypto-1.4.0-py2.py3-none-any.whl (104 kB)
+     |████████████████████████████████| 104 kB 5.0 MB/s 
+Collecting oscrypto>=1.2.1
+  Downloading oscrypto-1.2.1-py2.py3-none-any.whl (192 kB)
+     |████████████████████████████████| 192 kB 7.5 MB/s 
+Collecting distro>=1.5.0
+  Downloading distro-1.6.0-py2.py3-none-any.whl (19 kB)
+Collecting IP2Location==8.6.2
+  Downloading IP2Location-8.6.2-py2.py3-none-any.whl (9.2 kB)
+Collecting lief>=0.11.0
+  Downloading lief-0.11.5-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.0 MB)
+     |████████████████████████████████| 4.0 MB 3.3 MB/s 
+Collecting http-tools>=2.1.0
+  Downloading http-tools-2.1.0.tar.gz (540 kB)
+     |████████████████████████████████| 540 kB 2.9 MB/s 
+Collecting libsast>=1.4.2
+  Downloading libsast-1.4.5.tar.gz (37 kB)
+Collecting pdfkit>=0.6.1
+  Downloading pdfkit-0.6.1-py3-none-any.whl (12 kB)
+Collecting google-play-scraper>=0.1.2
+  Downloading google-play-scraper-1.0.2.tar.gz (52 kB)
+     |████████████████████████████████| 52 kB 7.4 MB/s 
+Collecting androguard==3.4.0a1
+  Downloading androguard-3.4.0a1-py3-none-any.whl (918 kB)
+     |████████████████████████████████| 918 kB 4.8 MB/s 
+Collecting apkid==2.1.2
+  Downloading apkid-2.1.2-py2.py3-none-any.whl (113 kB)
+     |████████████████████████████████| 113 kB 5.5 MB/s 
+Collecting quark-engine==21.6.3
+  Downloading quark_engine-21.6.3-py3-none-any.whl (45 kB)
+     |████████████████████████████████| 45 kB 4.1 MB/s 
+Collecting frida==15.0.8
+  Downloading frida-15.0.8.tar.gz (9.1 kB)
+Collecting ruamel.yaml==0.16.13
+  Downloading ruamel.yaml-0.16.13-py2.py3-none-any.whl (111 kB)
+     |████████████████████████████████| 111 kB 4.5 MB/s 
+Collecting click==7.1.2
+  Downloading click-7.1.2-py2.py3-none-any.whl (82 kB)
+     |████████████████████████████████| 82 kB 6.4 MB/s 
+Collecting decorator==4.4.2
+  Downloading decorator-4.4.2-py2.py3-none-any.whl (9.2 kB)
+Collecting pytz
+  Downloading pytz-2021.3-py2.py3-none-any.whl (503 kB)
+     |████████████████████████████████| 503 kB 3.1 MB/s 
+Collecting sqlparse>=0.2.2
+  Downloading sqlparse-0.4.2-py3-none-any.whl (42 kB)
+     |████████████████████████████████| 42 kB 6.9 MB/s 
+Collecting asgiref<4,>=3.3.2
+  Downloading asgiref-3.4.1-py3-none-any.whl (25 kB)
+Collecting pyasn1>=0.1.3
+  Downloading pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
+     |████████████████████████████████| 77 kB 6.9 MB/s 
+Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.7-py2.py3-none-any.whl (138 kB)
+     |████████████████████████████████| 138 kB 3.9 MB/s 
+Collecting charset-normalizer~=2.0.0; python_version >= "3"
+  Downloading charset_normalizer-2.0.6-py3-none-any.whl (37 kB)
+Collecting certifi>=2017.4.17
+  Downloading certifi-2021.10.8-py2.py3-none-any.whl (149 kB)
+     |████████████████████████████████| 149 kB 3.9 MB/s 
+Collecting idna<4,>=2.5; python_version >= "3"
+  Downloading idna-3.2-py3-none-any.whl (59 kB)
+     |████████████████████████████████| 59 kB 6.1 MB/s 
+Collecting beautifulsoup4
+  Downloading beautifulsoup4-4.10.0-py3-none-any.whl (97 kB)
+     |████████████████████████████████| 97 kB 4.8 MB/s 
+Collecting altgraph>=0.15
+  Downloading altgraph-0.17.2-py2.py3-none-any.whl (21 kB)
+Requirement already satisfied: setuptools>=3.0 in ./venv/lib/python3.8/site-packages (from gunicorn>=20.0.4->-r requirements.txt (line 11)) (44.0.0)
+Collecting mitmproxy>=6.0.0<=6.0.2
+  Downloading mitmproxy-7.0.4-py3-none-any.whl (1.1 MB)
+     |████████████████████████████████| 1.1 MB 3.9 MB/s 
+Collecting pyyaml>=5.3
+  Downloading PyYAML-5.4.1-cp38-cp38-manylinux1_x86_64.whl (662 kB)
+     |████████████████████████████████| 662 kB 2.2 MB/s 
+Collecting semgrep==0.53.0
+  Downloading semgrep-0.53.0-cp36.cp37.cp38.cp39.py36.py37.py38.py39-none-any.whl (66.9 MB)
+     |████████████████████████████████| 66.9 MB 3.9 MB/s 
+Collecting colorama>=0.4.1
+  Downloading colorama-0.4.4-py2.py3-none-any.whl (16 kB)
+Collecting ipython>=5.0.0
+  Downloading ipython-7.28.0-py3-none-any.whl (788 kB)
+     |████████████████████████████████| 788 kB 6.3 MB/s 
+Collecting pydot>=1.4.1
+  Downloading pydot-1.4.2-py2.py3-none-any.whl (21 kB)
+Collecting matplotlib>=3.0.2
+  Downloading matplotlib-3.4.3-cp38-cp38-manylinux1_x86_64.whl (10.3 MB)
+     |████████████████████████████████| 10.3 MB 7.2 MB/s 
+Collecting pygments>=2.3.1
+  Downloading Pygments-2.10.0-py3-none-any.whl (1.0 MB)
+     |████████████████████████████████| 1.0 MB 3.7 MB/s 
+Collecting networkx>=2.2
+  Downloading networkx-2.6.3-py3-none-any.whl (1.9 MB)
+     |████████████████████████████████| 1.9 MB 5.4 MB/s 
+Collecting yara-python-dex>=1.0.0
+  Downloading yara_python_dex-1.0.1-cp38-cp38-manylinux2010_x86_64.whl (582 kB)
+     |████████████████████████████████| 582 kB 6.5 MB/s 
+Collecting tqdm
+  Downloading tqdm-4.62.3-py2.py3-none-any.whl (76 kB)
+     |████████████████████████████████| 76 kB 7.3 MB/s 
+Collecting prettytable
+  Downloading prettytable-2.2.1-py3-none-any.whl (23 kB)
+Collecting graphviz
+  Downloading graphviz-0.17-py3-none-any.whl (18 kB)
+Collecting plotly
+  Downloading plotly-5.3.1-py2.py3-none-any.whl (23.9 MB)
+     |████████████████████████████████| 23.9 MB 4.8 MB/s 
+Collecting prompt-toolkit==3.0.19
+  Downloading prompt_toolkit-3.0.19-py3-none-any.whl (368 kB)
+     |████████████████████████████████| 368 kB 5.9 MB/s 
+Collecting pandas
+  Downloading pandas-1.3.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.5 MB)
+     |████████████████████████████████| 11.5 MB 5.2 MB/s 
+Collecting ruamel.yaml.clib>=0.1.2; platform_python_implementation == "CPython" and python_version < "3.10"
+  Downloading ruamel.yaml.clib-0.2.6-cp38-cp38-manylinux1_x86_64.whl (570 kB)
+     |████████████████████████████████| 570 kB 5.9 MB/s 
+Collecting soupsieve>1.2
+  Downloading soupsieve-2.2.1-py3-none-any.whl (33 kB)
+Collecting hyperframe<7,>=6.0
+  Downloading hyperframe-6.0.1-py3-none-any.whl (12 kB)
+Collecting h11<0.13,>=0.11
+  Downloading h11-0.12.0-py3-none-any.whl (54 kB)
+     |████████████████████████████████| 54 kB 4.9 MB/s 
+Collecting protobuf<3.19,>=3.14
+  Downloading protobuf-3.18.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.1 MB)
+     |████████████████████████████████| 1.1 MB 5.2 MB/s 
+Collecting h2<5,>=4.0
+  Downloading h2-4.1.0-py3-none-any.whl (57 kB)
+     |████████████████████████████████| 57 kB 8.9 MB/s 
+Collecting pyperclip<1.9,>=1.6.0
+  Downloading pyperclip-1.8.2.tar.gz (20 kB)
+Collecting tornado<7,>=4.3
+  Downloading tornado-6.1-cp38-cp38-manylinux2010_x86_64.whl (427 kB)
+     |████████████████████████████████| 427 kB 4.6 MB/s 
+Collecting pyOpenSSL<20.1,>=20.0
+  Downloading pyOpenSSL-20.0.1-py2.py3-none-any.whl (54 kB)
+     |████████████████████████████████| 54 kB 3.5 MB/s 
+Collecting wsproto<1.1,>=1.0
+  Downloading wsproto-1.0.0-py3-none-any.whl (24 kB)
+Collecting kaitaistruct<0.10,>=0.7
+  Downloading kaitaistruct-0.9.tar.gz (5.5 kB)
+Collecting zstandard<0.16,>=0.11
+  Downloading zstandard-0.15.2-cp38-cp38-manylinux2014_x86_64.whl (2.2 MB)
+     |████████████████████████████████| 2.2 MB 3.0 MB/s 
+Collecting msgpack<1.1.0,>=1.0.0
+  Downloading msgpack-1.0.2-cp38-cp38-manylinux1_x86_64.whl (302 kB)
+     |████████████████████████████████| 302 kB 2.5 MB/s 
+Collecting urwid<2.2,>=2.1.1
+  Downloading urwid-2.1.2.tar.gz (634 kB)
+     |████████████████████████████████| 634 kB 3.4 MB/s 
+Collecting cryptography<3.5,>=3.3
+  Downloading cryptography-3.4.8-cp36-abi3-manylinux_2_24_x86_64.whl (3.0 MB)
+     |████████████████████████████████| 3.0 MB 3.4 MB/s 
+Collecting sortedcontainers<2.5,>=2.3
+  Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+Collecting blinker<1.5,>=1.4
+  Downloading blinker-1.4.tar.gz (111 kB)
+     |████████████████████████████████| 111 kB 6.1 MB/s 
+Collecting ldap3<2.10,>=2.8
+  Downloading ldap3-2.9.1-py2.py3-none-any.whl (432 kB)
+     |████████████████████████████████| 432 kB 5.2 MB/s 
+Collecting publicsuffix2<3,>=2.20190812
+  Downloading publicsuffix2-2.20191221-py2.py3-none-any.whl (89 kB)
+     |████████████████████████████████| 89 kB 6.5 MB/s 
+Collecting passlib<1.8,>=1.6.5
+  Downloading passlib-1.7.4-py2.py3-none-any.whl (525 kB)
+     |████████████████████████████████| 525 kB 5.4 MB/s 
+Collecting pyparsing<2.5,>=2.4.2
+  Downloading pyparsing-2.4.7-py2.py3-none-any.whl (67 kB)
+     |████████████████████████████████| 67 kB 6.3 MB/s 
+Collecting flask<2.1,>=1.1.1
+  Downloading Flask-2.0.2-py3-none-any.whl (95 kB)
+     |████████████████████████████████| 95 kB 6.0 MB/s 
+Collecting Brotli<1.1,>=1.0
+  Downloading Brotli-1.0.9-cp38-cp38-manylinux1_x86_64.whl (357 kB)
+     |████████████████████████████████| 357 kB 6.0 MB/s 
+Collecting packaging>=20.4
+  Downloading packaging-21.0-py3-none-any.whl (40 kB)
+     |████████████████████████████████| 40 kB 5.0 MB/s 
+Collecting attrs>=19.3.0
+  Downloading attrs-21.2.0-py2.py3-none-any.whl (53 kB)
+     |████████████████████████████████| 53 kB 6.9 MB/s 
+Collecting jsonschema~=3.2.0
+  Downloading jsonschema-3.2.0-py2.py3-none-any.whl (56 kB)
+     |████████████████████████████████| 56 kB 7.7 MB/s 
+Collecting traitlets>=4.2
+  Downloading traitlets-5.1.0-py3-none-any.whl (101 kB)
+     |████████████████████████████████| 101 kB 6.0 MB/s 
+Collecting pickleshare
+  Downloading pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
+Collecting pexpect>4.3; sys_platform != "win32"
+  Downloading pexpect-4.8.0-py2.py3-none-any.whl (59 kB)
+     |████████████████████████████████| 59 kB 5.0 MB/s 
+Collecting matplotlib-inline
+  Downloading matplotlib_inline-0.1.3-py3-none-any.whl (8.2 kB)
+Collecting backcall
+  Downloading backcall-0.2.0-py2.py3-none-any.whl (11 kB)
+Collecting jedi>=0.16
+  Downloading jedi-0.18.0-py2.py3-none-any.whl (1.4 MB)
+     |████████████████████████████████| 1.4 MB 5.1 MB/s 
+Collecting cycler>=0.10
+  Downloading cycler-0.10.0-py2.py3-none-any.whl (6.5 kB)
+Collecting kiwisolver>=1.0.1
+  Downloading kiwisolver-1.3.2-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.whl (1.2 MB)
+     |████████████████████████████████| 1.2 MB 4.6 MB/s 
+Collecting python-dateutil>=2.7
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+     |████████████████████████████████| 247 kB 4.4 MB/s 
+Collecting numpy>=1.16
+  Downloading numpy-1.21.2-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (15.8 MB)
+     |████████████████████████████████| 15.8 MB 6.4 MB/s 
+Collecting pillow>=6.2.0
+  Downloading Pillow-8.3.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+     |████████████████████████████████| 3.0 MB 5.7 MB/s 
+Collecting wcwidth
+  Downloading wcwidth-0.2.5-py2.py3-none-any.whl (30 kB)
+Collecting six
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting tenacity>=6.2.0
+  Downloading tenacity-8.0.1-py3-none-any.whl (24 kB)
+Collecting hpack<5,>=4.0
+  Downloading hpack-4.0.0-py3-none-any.whl (32 kB)
+Collecting cffi>=1.12
+  Downloading cffi-1.14.6-cp38-cp38-manylinux1_x86_64.whl (411 kB)
+     |████████████████████████████████| 411 kB 3.8 MB/s 
+Collecting Werkzeug>=2.0
+  Downloading Werkzeug-2.0.2-py3-none-any.whl (288 kB)
+     |████████████████████████████████| 288 kB 5.1 MB/s 
+Collecting Jinja2>=3.0
+  Downloading Jinja2-3.0.2-py3-none-any.whl (133 kB)
+     |████████████████████████████████| 133 kB 5.5 MB/s 
+Collecting itsdangerous>=2.0
+  Downloading itsdangerous-2.0.1-py3-none-any.whl (18 kB)
+Collecting pyrsistent>=0.14.0
+  Downloading pyrsistent-0.18.0-cp38-cp38-manylinux1_x86_64.whl (118 kB)
+     |████████████████████████████████| 118 kB 3.9 MB/s 
+Collecting ptyprocess>=0.5
+  Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Collecting parso<0.9.0,>=0.8.0
+  Downloading parso-0.8.2-py2.py3-none-any.whl (94 kB)
+     |████████████████████████████████| 94 kB 5.8 MB/s 
+Collecting pycparser
+  Downloading pycparser-2.20-py2.py3-none-any.whl (112 kB)
+     |████████████████████████████████| 112 kB 3.1 MB/s 
+Collecting MarkupSafe>=2.0
+  Downloading MarkupSafe-2.0.1-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (30 kB)
+Using legacy 'setup.py install' for biplist, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for bs4, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for http-tools, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for libsast, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for google-play-scraper, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for frida, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for pyperclip, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for kaitaistruct, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for urwid, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for blinker, since package 'wheel' is not installed.
+Installing collected packages: pytz, sqlparse, asgiref, Django, lxml, pyasn1, rsa, biplist, urllib3, charset-normalizer, certifi, idna, requests, soupsieve, beautifulsoup4, bs4, colorlog, altgraph, macholib, whitenoise, gunicorn, psutil, shelljob, asn1crypto, oscrypto, distro, IP2Location, lief, hyperframe, h11, protobuf, hpack, h2, pyperclip, tornado, six, pycparser, cffi, cryptography, pyOpenSSL, wsproto, kaitaistruct, zstandard, msgpack, urwid, click, sortedcontainers, ruamel.yaml.clib, ruamel.yaml, blinker, ldap3, publicsuffix2, passlib, pyparsing, Werkzeug, MarkupSafe, Jinja2, itsdangerous, flask, Brotli, mitmproxy, http-tools, pyyaml, colorama, packaging, attrs, tqdm, pyrsistent, jsonschema, semgrep, libsast, pdfkit, google-play-scraper, pygments, wcwidth, prompt-toolkit, traitlets, pickleshare, ptyprocess, pexpect, matplotlib-inline, backcall, parso, jedi, decorator, ipython, pydot, cycler, kiwisolver, python-dateutil, numpy, pillow, matplotlib, networkx, androguard, yara-python-dex, apkid, prettytable, graphviz, tenacity, plotly, pandas, quark-engine, frida
+    Running setup.py install for biplist ... done
+    Running setup.py install for bs4 ... done
+    Running setup.py install for pyperclip ... done
+    Running setup.py install for kaitaistruct ... done
+    Running setup.py install for urwid ... done
+    Running setup.py install for blinker ... done
+    Running setup.py install for http-tools ... done
+    Running setup.py install for libsast ... done
+    Running setup.py install for google-play-scraper ... done
+    Running setup.py install for frida ... done
+ERROR: pip's legacy dependency resolver does not consider dependency conflicts when selecting packages. This behaviour is the source of the following dependency conflicts.
+quark-engine 21.6.3 requires click==8.0.1, but you'll have click 7.1.2 which is incompatible.
+Successfully installed Brotli-1.0.9 Django-3.2.8 IP2Location-8.6.2 Jinja2-3.0.2 MarkupSafe-2.0.1 Werkzeug-2.0.2 altgraph-0.17.2 androguard-3.4.0a1 apkid-2.1.2 asgiref-3.4.1 asn1crypto-1.4.0 attrs-21.2.0 backcall-0.2.0 beautifulsoup4-4.10.0 biplist-1.0.3 blinker-1.4 bs4-0.0.1 certifi-2021.10.8 cffi-1.14.6 charset-normalizer-2.0.6 click-7.1.2 colorama-0.4.4 colorlog-6.5.0 cryptography-3.4.8 cycler-0.10.0 decorator-4.4.2 distro-1.6.0 flask-2.0.2 frida-15.0.8 google-play-scraper-1.0.2 graphviz-0.17 gunicorn-20.1.0 h11-0.12.0 h2-4.1.0 hpack-4.0.0 http-tools-2.1.0 hyperframe-6.0.1 idna-3.2 ipython-7.28.0 itsdangerous-2.0.1 jedi-0.18.0 jsonschema-3.2.0 kaitaistruct-0.9 kiwisolver-1.3.2 ldap3-2.9.1 libsast-1.4.5 lief-0.11.5 lxml-4.6.3 macholib-1.15.2 matplotlib-3.4.3 matplotlib-inline-0.1.3 mitmproxy-7.0.4 msgpack-1.0.2 networkx-2.6.3 numpy-1.21.2 oscrypto-1.2.1 packaging-21.0 pandas-1.3.3 parso-0.8.2 passlib-1.7.4 pdfkit-0.6.1 pexpect-4.8.0 pickleshare-0.7.5 pillow-8.3.2 plotly-5.3.1 prettytable-2.2.1 prompt-toolkit-3.0.19 protobuf-3.18.1 psutil-5.8.0 ptyprocess-0.7.0 publicsuffix2-2.20191221 pyOpenSSL-20.0.1 pyasn1-0.4.8 pycparser-2.20 pydot-1.4.2 pygments-2.10.0 pyparsing-2.4.7 pyperclip-1.8.2 pyrsistent-0.18.0 python-dateutil-2.8.2 pytz-2021.3 pyyaml-5.4.1 quark-engine-21.6.3 requests-2.26.0 rsa-4.7.2 ruamel.yaml-0.16.13 ruamel.yaml.clib-0.2.6 semgrep-0.53.0 shelljob-0.6.3 six-1.16.0 sortedcontainers-2.4.0 soupsieve-2.2.1 sqlparse-0.4.2 tenacity-8.0.1 tornado-6.1 tqdm-4.62.3 traitlets-5.1.0 urllib3-1.26.7 urwid-2.1.2 wcwidth-0.2.5 whitenoise-5.3.0 wsproto-1.0.0 yara-python-dex-1.0.1 zstandard-0.15.2
+[INSTALL] Clean Up
+
+=======================MobSF Clean Script for Unix=======================
+Running this script will delete the Scan database, all files uploaded and generated.
+
+Deleting all Uploads
+Deleting all Downloads
+Deleting Static Analyzer Migrations
+Deleting Dynamic Analyzer Migrations
+Deleting MobSF Migrations
+Deleting python byte code files
+Deleting temp and log files
+Deleting DB
+Deleting Secret File
+Done
+[INSTALL] Migrating Database
+/home/tjguitat2025/Mobile-Security-Framework-MobSF/venv/lib/python3.8/site-packages/pdfkit/source.py:11: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if self.type is 'file':
+[INFO] 08/Oct/2021 23:04:22 - 
+  __  __       _    ____  _____         _____ _  _   
+ |  \/  | ___ | |__/ ___||  ___| __   _|___ /| || |  
+ | |\/| |/ _ \| '_ \___ \| |_    \ \ / / |_ \| || |_ 
+ | |  | | (_) | |_) |__) |  _|    \ V / ___) |__   _|
+ |_|  |_|\___/|_.__/____/|_|       \_/ |____(_) |_|  
+
+[INFO] 08/Oct/2021 23:04:22 - Mobile Security Framework v3.4.5 Beta
+REST API Key: 6792a84adf92cf7dc27a92f7e7a7a2e5d1ddd756125afb1b72a9b1cf719ec39d
+[INFO] 08/Oct/2021 23:04:22 - OS: Linux
+[INFO] 08/Oct/2021 23:04:22 - Platform: Linux-5.4.0-74-generic-x86_64-with-glibc2.29
+[INFO] 08/Oct/2021 23:04:22 - Dist: ubuntu 20.04 focal
+[INFO] 08/Oct/2021 23:04:22 - MobSF Basic Environment Check
+[WARNING] 08/Oct/2021 23:04:22 - Dynamic Analysis related functions will not work. 
+Make sure a Genymotion Android VM/Android Studio Emulator is running before performing Dynamic Analysis.
+No changes detected
+[INFO] 08/Oct/2021 23:04:22 - Checking for Update.
+[INFO] 08/Oct/2021 23:04:23 - No updates available.
+[INFO] 08/Oct/2021 23:04:24 - 
+  __  __       _    ____  _____         _____ _  _   
+ |  \/  | ___ | |__/ ___||  ___| __   _|___ /| || |  
+ | |\/| |/ _ \| '_ \___ \| |_    \ \ / / |_ \| || |_ 
+ | |  | | (_) | |_) |__) |  _|    \ V / ___) |__   _|
+ |_|  |_|\___/|_.__/____/|_|       \_/ |____(_) |_|  
+
+[INFO] 08/Oct/2021 23:04:24 - Mobile Security Framework v3.4.5 Beta
+REST API Key: 6792a84adf92cf7dc27a92f7e7a7a2e5d1ddd756125afb1b72a9b1cf719ec39d
+[INFO] 08/Oct/2021 23:04:24 - OS: Linux
+[INFO] 08/Oct/2021 23:04:24 - Platform: Linux-5.4.0-74-generic-x86_64-with-glibc2.29
+[INFO] 08/Oct/2021 23:04:24 - Dist: ubuntu 20.04 focal
+[INFO] 08/Oct/2021 23:04:24 - MobSF Basic Environment Check
+[WARNING] 08/Oct/2021 23:04:24 - Dynamic Analysis related functions will not work. 
+Make sure a Genymotion Android VM/Android Studio Emulator is running before performing Dynamic Analysis.
+Migrations for 'StaticAnalyzer':
+  mobsf/StaticAnalyzer/migrations/0001_initial.py
+    - Create model RecentScansDB
+    - Create model StaticAnalyzerAndroid
+    - Create model StaticAnalyzerIOS
+    - Create model StaticAnalyzerWindows
+[INFO] 08/Oct/2021 23:04:24 - Checking for Update.
+[INFO] 08/Oct/2021 23:04:29 - No updates available.
+[INFO] 08/Oct/2021 23:04:30 - 
+  __  __       _    ____  _____         _____ _  _   
+ |  \/  | ___ | |__/ ___||  ___| __   _|___ /| || |  
+ | |\/| |/ _ \| '_ \___ \| |_    \ \ / / |_ \| || |_ 
+ | |  | | (_) | |_) |__) |  _|    \ V / ___) |__   _|
+ |_|  |_|\___/|_.__/____/|_|       \_/ |____(_) |_|  
+
+[INFO] 08/Oct/2021 23:04:30 - Mobile Security Framework v3.4.5 Beta
+REST API Key: 6792a84adf92cf7dc27a92f7e7a7a2e5d1ddd756125afb1b72a9b1cf719ec39d
+[INFO] 08/Oct/2021 23:04:30 - OS: Linux
+[INFO] 08/Oct/2021 23:04:30 - Platform: Linux-5.4.0-74-generic-x86_64-with-glibc2.29
+[INFO] 08/Oct/2021 23:04:31 - Dist: ubuntu 20.04 focal
+[INFO] 08/Oct/2021 23:04:31 - MobSF Basic Environment Check
+[WARNING] 08/Oct/2021 23:04:31 - Dynamic Analysis related functions will not work. 
+Make sure a Genymotion Android VM/Android Studio Emulator is running before performing Dynamic Analysis.
+Operations to perform:
+  Apply all migrations: StaticAnalyzer, auth, contenttypes, sessions
+Running migrations:
+  Applying StaticAnalyzer.0001_initial... OK
+  Applying contenttypes.0001_initial... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0001_initial... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length...[INFO] 08/Oct/2021 23:04:31 - Checking for Update.
+ OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length...[INFO] 08/Oct/2021 23:04:31 - No updates available.
+ OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+[INFO] 08/Oct/2021 23:04:32 - 
+  __  __       _    ____  _____         _____ _  _   
+ |  \/  | ___ | |__/ ___||  ___| __   _|___ /| || |  
+ | |\/| |/ _ \| '_ \___ \| |_    \ \ / / |_ \| || |_ 
+ | |  | | (_) | |_) |__) |  _|    \ V / ___) |__   _|
+ |_|  |_|\___/|_.__/____/|_|       \_/ |____(_) |_|  
+
+[INFO] 08/Oct/2021 23:04:32 - Mobile Security Framework v3.4.5 Beta
+REST API Key: 6792a84adf92cf7dc27a92f7e7a7a2e5d1ddd756125afb1b72a9b1cf719ec39d
+[INFO] 08/Oct/2021 23:04:32 - OS: Linux
+[INFO] 08/Oct/2021 23:04:32 - Platform: Linux-5.4.0-74-generic-x86_64-with-glibc2.29
+[INFO] 08/Oct/2021 23:04:32 - Dist: ubuntu 20.04 focal
+[INFO] 08/Oct/2021 23:04:32 - MobSF Basic Environment Check
+[WARNING] 08/Oct/2021 23:04:32 - Dynamic Analysis related functions will not work. 
+Make sure a Genymotion Android VM/Android Studio Emulator is running before performing Dynamic Analysis.
+Operations to perform:
+  Synchronize unmigrated apps: DynamicAnalyzer, MalwareAnalyzer, MobSF, messages, staticfiles
+  Apply all migrations: StaticAnalyzer, auth, contenttypes, sessions
+Synchronizing apps without migrations:
+  Creating tables...
+    Running deferred SQL...
+Running migrations:
+  No migrations to apply.
+[INFO] 08/Oct/2021 23:04:32 - Checking for Update.
+[INFO] 08/Oct/2021 23:04:32 - No updates available.
+[INFO] 08/Oct/2021 23:04:33 - 
+  __  __       _    ____  _____         _____ _  _   
+ |  \/  | ___ | |__/ ___||  ___| __   _|___ /| || |  
+ | |\/| |/ _ \| '_ \___ \| |_    \ \ / / |_ \| || |_ 
+ | |  | | (_) | |_) |__) |  _|    \ V / ___) |__   _|
+ |_|  |_|\___/|_.__/____/|_|       \_/ |____(_) |_|  
+
+[INFO] 08/Oct/2021 23:04:33 - Mobile Security Framework v3.4.5 Beta
+REST API Key: 6792a84adf92cf7dc27a92f7e7a7a2e5d1ddd756125afb1b72a9b1cf719ec39d
+[INFO] 08/Oct/2021 23:04:33 - OS: Linux
+[INFO] 08/Oct/2021 23:04:33 - Platform: Linux-5.4.0-74-generic-x86_64-with-glibc2.29
+[INFO] 08/Oct/2021 23:04:33 - Dist: ubuntu 20.04 focal
+[INFO] 08/Oct/2021 23:04:33 - MobSF Basic Environment Check
+[WARNING] 08/Oct/2021 23:04:33 - Dynamic Analysis related functions will not work. 
+Make sure a Genymotion Android VM/Android Studio Emulator is running before performing Dynamic Analysis.
+No changes detected
+[INFO] 08/Oct/2021 23:04:34 - Checking for Update.
+[INFO] 08/Oct/2021 23:04:34 - No updates available.
+[INFO] 08/Oct/2021 23:04:35 - 
+  __  __       _    ____  _____         _____ _  _   
+ |  \/  | ___ | |__/ ___||  ___| __   _|___ /| || |  
+ | |\/| |/ _ \| '_ \___ \| |_    \ \ / / |_ \| || |_ 
+ | |  | | (_) | |_) |__) |  _|    \ V / ___) |__   _|
+ |_|  |_|\___/|_.__/____/|_|       \_/ |____(_) |_|  
+
+[INFO] 08/Oct/2021 23:04:35 - Mobile Security Framework v3.4.5 Beta
+REST API Key: 6792a84adf92cf7dc27a92f7e7a7a2e5d1ddd756125afb1b72a9b1cf719ec39d
+[INFO] 08/Oct/2021 23:04:35 - OS: Linux
+[INFO] 08/Oct/2021 23:04:35 - Platform: Linux-5.4.0-74-generic-x86_64-with-glibc2.29
+[INFO] 08/Oct/2021 23:04:35 - Dist: ubuntu 20.04 focal
+[INFO] 08/Oct/2021 23:04:35 - MobSF Basic Environment Check
+[WARNING] 08/Oct/2021 23:04:35 - Dynamic Analysis related functions will not work. 
+Make sure a Genymotion Android VM/Android Studio Emulator is running before performing Dynamic Analysis.
+No changes detected in app 'StaticAnalyzer'
+[INFO] 08/Oct/2021 23:04:35 - Checking for Update.
+[INFO] 08/Oct/2021 23:04:35 - No updates available.
+[INFO] 08/Oct/2021 23:04:36 - 
+  __  __       _    ____  _____         _____ _  _   
+ |  \/  | ___ | |__/ ___||  ___| __   _|___ /| || |  
+ | |\/| |/ _ \| '_ \___ \| |_    \ \ / / |_ \| || |_ 
+ | |  | | (_) | |_) |__) |  _|    \ V / ___) |__   _|
+ |_|  |_|\___/|_.__/____/|_|       \_/ |____(_) |_|  
+
+[INFO] 08/Oct/2021 23:04:36 - Mobile Security Framework v3.4.5 Beta
+REST API Key: 6792a84adf92cf7dc27a92f7e7a7a2e5d1ddd756125afb1b72a9b1cf719ec39d
+[INFO] 08/Oct/2021 23:04:36 - OS: Linux
+[INFO] 08/Oct/2021 23:04:36 - Platform: Linux-5.4.0-74-generic-x86_64-with-glibc2.29
+[INFO] 08/Oct/2021 23:04:36 - Dist: ubuntu 20.04 focal
+[INFO] 08/Oct/2021 23:04:36 - MobSF Basic Environment Check
+[WARNING] 08/Oct/2021 23:04:36 - Dynamic Analysis related functions will not work. 
+Make sure a Genymotion Android VM/Android Studio Emulator is running before performing Dynamic Analysis.
+Operations to perform:
+  Apply all migrations: StaticAnalyzer, auth, contenttypes, sessions
+Running migrations:
+  No migrations to apply.
+[INFO] 08/Oct/2021 23:04:38 - Checking for Update.
+[INFO] 08/Oct/2021 23:04:38 - No updates available.
+./setup.sh: line 71: wkhtmltopdf: command not found
+Download and Install wkhtmltopdf for PDF Report Generation - https://wkhtmltopdf.org/downloads.html
+[INSTALL] Installation Complete
+tjguitat2025@tjguitat2025-VirtualBox:~/Mobile-Security-Framework-MobSF$ 
+
