@@ -1,0 +1,31 @@
+Detection of security vulnerabilities in C language applications
+
+https://owasp.org/www-pdf-archive/OWASP_Code_Review_Guide_v2.pdf
+
+https://googleprojectzero.github.io/0days-in-the-wild/0day-RCAs/2019/CVE-2019-2215.html
+
+https://googleprojectzero.blogspot.com/2019/11/bad-binder-android-in-wild-exploit.html
+
+https://bugs.chromium.org/p/project-zero/issues/detail?id=1942
+
+Ripple20_CVE-2020-11901-August20.pdf
+
+https://jaiverma.github.io/blog/joern-uboot
+
+https://jaiverma.github.io/blog/joern-intro
+
+https://docs.joern.io/cpgql/reference-card/#node-type-steps
+
+https://guyinatuxedo.github.io/03-beginner_re/csaw18_x86tour_pt1/index.html
+
+https://ctf101.org/binary-exploitation/heap-exploitation/
+
+https://github.com/nnamon/PracticalRet2Libc/blob/master/docs/lessonplans/1_practicalrop/lessonplan.md
+
+http://blog.k3170makan.com/2020/11/linux-kernel-exploitation-0x0-debugging.html
+
+
+Pattern-Based Vulnerability Discovery
+
+https://android-review.googlesource.com/c/kernel/common/+/609966
+
